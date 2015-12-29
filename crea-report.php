@@ -54,6 +54,10 @@ for ($i = 0; $i < $num; $i++) {
 	}
 }
 
+// Import in db
+$query = "INSERT INTO report (keyword) VALUES ($keyword_concatenata)";
+mysqli->query($query) or die("Errore nell'inserimento nella tabella report");
+
 // imposto la lingua
 $ling = fopen("lingua.txt", "r");
 if(!$ling) die ("Errore nella operaione con il file");
