@@ -62,7 +62,7 @@ $query = "INSERT INTO utenti_report (keyword) VALUES ($keyword_concatenata)";
 mysqli->query($query) or die("Errore nell'inserimento nella tabella report");
 
 print_r($keyword_concatenata);
-/*
+
 // imposto la lingua
 $ling = fopen("lingua.txt", "r");
 if(!$ling) die ("Errore nella operaione con il file");
@@ -80,7 +80,8 @@ $lang = $lingua;
 
 $api = $codapi;
 
-
+include_once("analize.php");
+/*
 ?>
 
 <!DOCTYPE html>
