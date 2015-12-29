@@ -54,10 +54,15 @@ for ($i = 0; $i < $num; $i++) {
 	}
 }
 
+// Empty report table
+mysqli->query("TRUNCATE utenti_report");
+
 // Import in db
 $query = "INSERT INTO utenti_report (keyword) VALUES ($keyword_concatenata)";
 mysqli->query($query) or die("Errore nell'inserimento nella tabella report");
 
+print_r($keyword_concatenata);
+/*
 // imposto la lingua
 $ling = fopen("lingua.txt", "r");
 if(!$ling) die ("Errore nella operaione con il file");
@@ -257,7 +262,7 @@ fclose($file); ?>
 </body>
 
 </html>
-
+*/
 
 
 
