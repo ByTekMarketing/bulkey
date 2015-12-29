@@ -10,7 +10,7 @@ $db_host = "localhost"; //Host address (most likely localhost)
 $db_name = "bulkey"; //Name of Database
 $db_user = "root"; //Name of database user
 $db_pass = "84wC1ES7"; //Password for database user
-//$db_table_prefix = "utenti_";
+$db_table_prefix = "utenti_";
 
 GLOBAL $errors;
 GLOBAL $successes;
