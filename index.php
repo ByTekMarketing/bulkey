@@ -2,7 +2,7 @@
 /*
 UserCake Version: 2.0.2
 http://usercake.com
-Committed!
+Committed! notes
 */
 
 require_once("models/config.php");
